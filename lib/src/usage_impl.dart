@@ -121,7 +121,7 @@ class AnalyticsImpl implements Analytics {
 
   @override
   Future sendScreenView(String viewName, {Map<String, String> parameters}) {
-    var args = <String, dynamic>{'cd': viewName};
+    var args = <String, dynamic>{'screenName': viewName};
     if (parameters != null) {
       args.addAll(parameters);
     }
